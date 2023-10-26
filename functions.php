@@ -21,3 +21,7 @@ function hello_elementor_child_enqueue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts' );
+
+include_once( get_stylesheet_directory() . '/functions/custom_feed.php' );
+
+
